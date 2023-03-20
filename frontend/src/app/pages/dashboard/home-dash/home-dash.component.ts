@@ -49,6 +49,7 @@ export class HomeDashComponent implements OnInit {
       }
     )
   }
+  
   company: string = ''
   setCompany(event: any) {
     this.prices = [];

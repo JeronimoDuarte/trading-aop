@@ -1,6 +1,5 @@
 const express = require('express');
 const rp = require('request-promise');
-const { curly, Curl } = require('node-libcurl');
 const app = express();
 const PORT = process.env.PORT || 3100;
 const cors = require('cors');
@@ -10,9 +9,8 @@ app.get('/stock/:symbol', async (req, res) => {
   try {
     console.log('teste req.params.symbol ==> ', req.params.symbol)
     const options = {
-      
-      uri: `https://query2.finance.yahoo.com/v8/finance/chart/${req.params.symbol}?interval=1d&range=2mo`,
 
+      uri: `https://query2.finance.yahoo.com/v8/finance/chart/${req.params.symbol}?interval=1d&range=2mo`,
     };
     const data = await rp(options);
     const dataJson = await JSON.parse(data)
