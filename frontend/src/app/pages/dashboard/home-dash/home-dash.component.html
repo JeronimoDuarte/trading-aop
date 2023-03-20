@@ -24,9 +24,9 @@
            </div>
         </div>
         <!-- Title dash -->
-        <div class="titles-dash">
+        <div class="titles-dash" *ngIf="prices.length >= 30">
             <h3>
-                Analysis from 02/12/2023 to 03/12/2023 
+                Analysis from {{prices[29].date | date: 'dd/MM/YYYY'}}  to {{prices[0].date | date: 'dd/MM/YYYY'}}
             </h3>           
         </div>
         <!-- Title Data -->
@@ -34,7 +34,7 @@
             <h3>Asset: {{company | uppercase}}</h3>
         </div>
         <!-- Dashboards company -->
-        <div class="dash-company">
+        <div class="dash-company" *ngIf="prices && prices.length >= 37; else noLengthPrices">
             <div *ngIf="typeChart === 'bar'">
                 <app-chart *ngIf="prices.length" [data]="prices"  [typeChart]="typeChart"></app-chart>
             </div>
@@ -48,6 +48,9 @@
                 <app-table [prices]="prices"></app-table>
             </div>
         </div>
+        <ng-template #noLengthPrices>
+            <app-notification  *ngIf="notification !== undefined" [notification]="notification"></app-notification>
+        </ng-template>
       
 
     </main>

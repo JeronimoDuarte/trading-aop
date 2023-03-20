@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  nodeapp_trading:
+    restart: unless-stopped
+    build:  
+      context: ./nodeapp
+      dockerfile: Dockerfile
+    image: nodeapp_trading
+    container_name: nodeapp_trading
+    ports:
+      - 3100:3100
+
+  frontend_trading:
+    restart: unless-stopped
+    build:  
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: frontend_trading
+    container_name: frontend_trading
+    ports:
+      - 4200:80
+    depends_on:
+      - nodeapp_trading 

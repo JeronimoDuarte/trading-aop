@@ -98,6 +98,10 @@ export class HomeDashComponent implements OnInit {
         diff1: priceDiff1,
         diffFirst: firstPriceDiff
       });
+
+      if(prices.length < 35){
+        this.notification = new NotificationModel(303, 'Não existem dias de analise suficientes', 'fadeIn')
+      }
     }
   }
   
