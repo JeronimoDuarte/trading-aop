@@ -1,4 +1,4 @@
-# Viacred test
+# test assets
 
 Para rodar este teste siga os seguintes passos:
 
