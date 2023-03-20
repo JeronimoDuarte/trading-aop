@@ -1,0 +1,23 @@
+@import '../../../../assets/sass/variables.scss';
+.notification{
+    padding: 20px;
+    border-radius: $borderRadiusDefault;
+    &-error{
+        background-color: $notificationError;
+        color: $whiteColor;
+    }
+    &-info{
+        background-color: $notificationInfo;
+        color: $whiteColor;
+    }
+
+    &-success{
+        background-color: $notificationInfo;
+        color: $whiteColor;
+    }
+
+    &-alert{
+        background-color: $notificationInfo;
+        color: $whiteColor;
+    }
+}

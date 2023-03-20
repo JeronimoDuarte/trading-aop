@@ -1,0 +1,54 @@
+<content-body>
+    <main>
+      
+        <div class="notifications" *ngIf="notification !== undefined">
+            <app-notification [notification]="notification"></app-notification>
+        </div>
+        <div class="head-filter">
+            
+           <div class="select-filter" (change)="setCompany($event)">
+                <select name="test" >
+                    <option value="test" >Select the asset </option>
+                    <option *ngFor="let company of companies" [value]="company.symbol">
+                        {{company.name}}
+                    </option>
+                </select>
+           </div>
+           <div class="select-filter" >
+            <select name="chartSelect" (change)="setTypeChart($event)">
+                <option value="test" >Select the chart</option>
+                <option *ngFor="let chart of charts" [value]="chart">
+                    {{chart}}
+                </option>
+            </select>
+           </div>
+        </div>
+        <!-- Title dash -->
+        <div class="titles-dash">
+            <h3>
+                Analysis from 02/12/2023 to 03/12/2023 
+            </h3>           
+        </div>
+        <!-- Title Data -->
+        <div class="titles-data">
+            <h3>Asset: {{company | uppercase}}</h3>
+        </div>
+        <!-- Dashboards company -->
+        <div class="dash-company">
+            <div *ngIf="typeChart === 'bar'">
+                <app-chart *ngIf="prices.length" [data]="prices"  [typeChart]="typeChart"></app-chart>
+            </div>
+            <div *ngIf="typeChart === 'line'">
+                <app-chart *ngIf="prices.length" [data]="prices"  [typeChart]="typeChart"></app-chart>
+            </div>
+            <div *ngIf="typeChart === 'pie'">
+                <app-chart *ngIf="prices.length" [data]="prices"  [typeChart]="typeChart"></app-chart>
+            </div>
+            <div *ngIf="typeChart === 'table'">
+                <app-table [prices]="prices"></app-table>
+            </div>
+        </div>
+      
+
+    </main>
+</content-body>

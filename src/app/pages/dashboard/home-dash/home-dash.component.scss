@@ -1,0 +1,116 @@
+@import "../../../../assets/sass/variables.scss";
+main{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "notifications notifications "
+    "head-filter head-filter"
+    "titles-data titles-dash"
+    "dash-company dash-company ";
+    gap: 40px;
+    h3{
+        color: $fontColor;
+        padding: 0;
+        margin: 0;
+    }
+    .notifications{
+        grid-area: notifications;
+        padding-top: 60px ;
+    }
+    .head-filter{
+        grid-area: head-filter;
+        background-color: $whiteColor;
+        box-shadow: $boxShadowDefault;
+        height: 80px;
+        margin-top: 20px;
+        border-radius: $borderRadiusDefault;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "select-company select-asset "
+        "";
+        gap: 10px;
+        select{
+            height: 60px;
+            width: 90%;
+            padding: 10px 5px;
+            background-color: $whiteColor;
+            box-shadow: $boxShadowDefault;
+            border: none;
+            border-radius: $borderRadiusDefault;
+        }
+        select:focus-visible{
+            border: 2px solid $primaryColor;
+        }
+        .select-filter{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        select:checked ~ option{
+            border: 2px solid $primaryColor;
+        }
+        button{
+            width: 50%;
+            height: 60px;
+            background-color: $primaryColor;
+            color: $whiteColor;
+            border: none;
+            border-radius: $borderRadiusDefault;
+            box-shadow: $boxShadowDefault;
+        }
+       
+    }
+    .titles-data{
+        grid-area: titles-data;
+    }
+    .titles-dash{
+        grid-area: titles-dash;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+       ;
+        select{
+            width: 50%;
+            padding: 10px;
+            height: 60px;
+            border-radius: $borderRadiusDefault;
+            border: none;
+            background-color: $whiteColor;
+            option{
+                background-color: $whiteColor;
+            }
+        }
+    }
+    .dash-company{
+        grid-area: dash-company;
+        background-color: $whiteColor;
+        height: auto;
+        padding: 5px;
+        border-radius: $borderRadiusDefault;
+
+       
+    }
+    .data-company{
+        grid-area: data-company;
+        
+        .card-data{
+            width: 100%;
+            height: 250px;
+            background-color: $whiteColor;
+            box-shadow: $boxShadowDefault;
+            border-radius: $borderRadiusDefault;
+        }
+    }
+
+   
+  
+     
+}

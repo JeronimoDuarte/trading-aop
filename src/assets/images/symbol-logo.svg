@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.852" height="56.851" viewBox="0 0 56.852 56.851">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_2" data-name="Caminho 2" d="M21.149,28.426a20.968,20.968,0,1,1,20.97,20.965,20.965,20.965,0,0,1-20.97-20.965M42.119,0A28.426,28.426,0,1,0,70.545,28.426,28.423,28.423,0,0,0,42.119,0Z" transform="translate(-13.693 -0.001)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.065" y1="1.202" x2="0.071" y2="1.202" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#52006a"/>
+      <stop offset="0.48" stop-color="#8115ff"/>
+      <stop offset="1" stop-color="#15ceff"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_4" data-name="Caminho 4" d="M40.941,57.836v9.871a17.946,17.946,0,0,0,8.589,7.36V57.836Z" transform="translate(-40.941 -57.836)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-2.289" y1="3.315" x2="-2.233" y2="3.315" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-3">
+      <path id="Caminho_5" data-name="Caminho 5" d="M86.958,57.836v17.23A17.951,17.951,0,0,0,95.552,67.7V57.836Z" transform="translate(-86.958 -57.836)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="-4.858" y1="3.315" x2="-4.802" y2="3.315" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-4">
+      <path id="Caminho_6" data-name="Caminho 6" d="M63.95,34.288V63.626a18.062,18.062,0,0,0,8.594,0V34.288Z" transform="translate(-63.95 -34.288)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="-3.573" y1="2.292" x2="-3.517" y2="2.292" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Grupo_18" data-name="Grupo 18" transform="translate(-45.787 -15.59)">
+    <g id="Grupo_3" data-name="Grupo 3" transform="translate(45.787 15.59)" clip-path="url(#clip-path)">
+      <rect id="Retângulo_9" data-name="Retângulo 9" width="80.4" height="80.4" transform="translate(-28.426 28.426) rotate(-45)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Grupo_13" data-name="Grupo 13" transform="translate(58.869 43.358)">
+      <g id="Grupo_12" data-name="Grupo 12" clip-path="url(#clip-path-2)">
+        <rect id="Retângulo_13" data-name="Retângulo 13" width="8.589" height="17.23" transform="translate(0 0)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+    <g id="Grupo_15" data-name="Grupo 15" transform="translate(80.963 43.358)">
+      <g id="Grupo_14" data-name="Grupo 14" clip-path="url(#clip-path-3)">
+        <rect id="Retângulo_14" data-name="Retângulo 14" width="8.594" height="17.23" transform="translate(0 0)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <g id="Grupo_17" data-name="Grupo 17" transform="translate(69.916 32.052)">
+      <g id="Grupo_16" data-name="Grupo 16" clip-path="url(#clip-path-4)">
+        <rect id="Retângulo_15" data-name="Retângulo 15" width="8.594" height="29.856" transform="translate(0 0)" fill="url(#linear-gradient-4)"/>
+      </g>
+    </g>
+  </g>
+</svg>

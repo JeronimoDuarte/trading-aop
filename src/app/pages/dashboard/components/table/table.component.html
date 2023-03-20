@@ -1,0 +1,25 @@
+<div class="item" *ngIf="prices.length === 0; else tableData">
+    <ngx-skeleton-loader></ngx-skeleton-loader>
+</div>
+<ng-template #tableData>
+    <table *ngIf="prices">
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Data</th>
+                <th>Valor</th>
+                <th>Variação em relação a D-1</th>
+                <th>Variação em relação a primeira data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let price of prices">
+                <td>{{ price.day }}</td>
+                <td>{{ price.date | date: 'dd/MM/YYYY' }}</td>
+                <td>{{ price.close | currency:'USD':'symbol':'1.2-2' }}</td>
+                <td>{{ price.diff1.toFixed(2) }}%</td>
+                <td>{{ price.diffFirst.toFixed(2) }}%</td>
+            </tr>
+        </tbody>
+    </table>
+</ng-template>

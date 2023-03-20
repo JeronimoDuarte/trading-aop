@@ -1,0 +1,15 @@
+
+
+<div class="item" *ngIf="lineChartData[0].data.length === 0; else chartData">
+  <ngx-skeleton-loader ></ngx-skeleton-loader>
+</div>
+<ng-template #chartData>
+      <canvas 
+        baseChart 
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"          
+        [legend]="lineChartLegend"
+        [type]="typeChart">
+  </canvas>
+</ng-template>

@@ -1,0 +1,17 @@
+@import './variables.scss';
+@import './font.scss';
+
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    zoom: normal;
+    font-family: $defaultFont;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $whiteColor2;
+
+}

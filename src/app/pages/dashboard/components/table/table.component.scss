@@ -1,0 +1,31 @@
+
+@import "../../../../../assets/sass/variables.scss";
+table {
+    border-collapse: collapse;
+    border-radius: 10px; /* Define o raio de curvatura das bordas */
+    overflow: hidden;
+    width: 100%;
+    thead{
+        background-color: $primaryColor;        
+    }
+    th, td {
+        border: 0.3px solid #fff;
+        text-align: center;
+        padding: 12px;
+        
+        }
+        td{
+            &:nth-child(3),&:nth-child(4), &:nth-child(5) {
+                text-align: right;
+            }
+        }
+        th {
+      
+        color: #333;
+        font-weight: 400;
+        }
+    
+        tr:nth-child(even) {
+        background-color: $evenTableColor;
+        }
+    }
