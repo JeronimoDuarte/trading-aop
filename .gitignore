@@ -8,7 +8,7 @@
 
 # Node
 /frontend/node_modules
-/frontend/nodeapp/node_modules
+/nodeapp/node_modules
 /frontend/npm-debug.log
 /frontend/yarn-error.log
 
